@@ -5,39 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Instagram</title>
 </head>
 
 <body>
+    <!-- conteúdo da página -->
     <main class="instagram-wrapper">
+        <!-- seção esquerda da página, com a imagem do smartphone -->
         <section class="instagram-phone">
             <img src="./img/instagram-celular.png" alt="smartphone">
         </section>
+
+        <!-- seção direita da página, para entrar na conta ou sair -->
         <section class="instagram-login">
+            <!-- grupos da página, existem três -->
+            <!-- 1º: grupo de login -->
             <div class="group">
                 <img src="./img/instagram-logo.png" class="insta-logo" alt="logo instagram">
-                <div class="profile-photo">
-                    <img class="imgperfil" src="https://github.com/lufecrx.png" alt="perfil">
+                <div class="login">
+                    <input type="text" placeholder=" Phone, username or email">
+                    <input type="password" placeholder=" Password">
+                    <a href="#" class="account-login">Log in</a>
+                    <span>or</span>
                 </div>
-                <a href="#" class="login">Continue as lufecr_</a>
-                <a href="#" class="logout">Remove account </a>
+                <a href="./continuelogin.html" class="continue-login">Continue as lufecr_</a>
             </div>
 
+            <!-- 2º: grupo para trocar de conta ou se cadastrar -->
             <div class="group">
                 <p class="not-profile">Not lufecr_?</p>
                 <p class="not-profile">
                     <span class="link-blue">Switch accounts</span>
                     or
-                    <span class="link-blue">Sign up</span>
+                    <a href="./signup.html" class="link-blue">Sign up</a>
                 </p>
             </div>
 
+            <!-- 3º: grupo para baixar o app mobile -->
             <div class="getapp">
                 <p class="textgetapp">Get the app.</p>
                 <div class="download">
-                    <a href="#" class="app-download"></a>
-                    <a href="#" class="app-download"></a>
+                    <a href="https://apps.apple.com/br/app/instagram/id389801252" class="app-download"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US"
+                        class="app-download"></a>
                 </div>
             </div>
         </section>

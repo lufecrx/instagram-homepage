@@ -1,3 +1,4 @@
+/* resetando configurações padrões da página */
 * {
     padding: 0;
     margin: 0;
@@ -16,6 +17,7 @@ body {
     justify-content: center;
 }
 
+/* conteúdo da página */
 .instagram-wrapper {
     display: flex;
     align-items: center;
@@ -24,6 +26,7 @@ body {
     height: 100vh;
 }
 
+/* parte esquerda da página */
 .instagram-phone {
     display: flex;
     align-items: center;
@@ -35,6 +38,7 @@ body {
     height: 50rem;
 }
 
+/* parte direita da página */
 .instagram-login {
     display: flex;
     align-items: center;
@@ -50,17 +54,19 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
-    width: 100%;
+    width: 90%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray
+    border: 1px solid lightgray;
 }
 
 .group:nth-child(1) {
     min-height: 19rem;
+    margin-bottom: 1rem;
 }
 
-.instagram-logo {
+.insta-logo {
     height: 3rem;
+    margin: 1rem;
 }
 
 .profile-photo {
@@ -71,21 +77,69 @@ body {
     overflow: hidden;
 }
 
-.profile-photo img {
+/* .profile-photo img {
     width: 5.5rem;
     height: 5.5rem;
-}
+} */
 
 .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login input {
+    font-size: 12px;
+    background: rgba(var(--b3f,250,250,250),1);
+    height: 2rem;
+    width: 60%;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);   
+    margin-bottom: 12px;
+}
+
+.account-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    width: 60%;
+    border-radius: 4px;
+    padding: 4px;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.login span{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-weight: 700;
+}
+
+.login span:before{
+    content: "";
+    background-color: lightgray;
+    width: 6.4rem;
+    margin: 12px;
+    height: 1px;
+}
+
+.login span:after{
+    content: "";
+    background-color: lightgray;
+    width: 6.4rem;
+    margin: 12px;
+    height: 1px;
+}
+
+.continue-login {
     background-color: #0095f6;
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
-}
-
-.logout {
-    color: #0095f6;
-    margin-top: 1rem;
 }
 
 .not-profile {
@@ -153,11 +207,11 @@ body {
         width: 100%
     }
 
-    .group{
-        border: 1px solid transparent;
+    .group {
+        border: 1px solid transparent;   
     }
 
-    .download{
+    .download {
         padding: 0;
         margin-top: 1rem;
     }
